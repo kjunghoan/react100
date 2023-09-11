@@ -1,0 +1,19 @@
+.signUp {
+  background-color: gray;
+  max-width: 800px;
+
+  display: block;
+  flex:center;
+  flex-direction: column;
+  text-align: center;
+  margin:auto;
+  border: 5px solid black;
+  box-shadow: 0 4px 25px rgba(148,162,176,.25);
+  padding: 4px;
+  border-radius: 10px;
+  
+  & .logo {
+    
+  }
+}
+
