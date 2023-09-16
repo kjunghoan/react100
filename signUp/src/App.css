@@ -1,19 +1,50 @@
-.signUp {
-  background-color: gray;
-  max-width: 800px;
-
-  display: block;
-  flex:center;
-  flex-direction: column;
+.App {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin:auto;
-  border: 5px solid black;
-  box-shadow: 0 4px 25px rgba(148,162,176,.25);
-  padding: 4px;
-  border-radius: 10px;
-  
-  & .logo {
-    
-  }
+  color:white;
+  background-image: linear-gradient(79deg, #9057d2, #b25fe9 48%, #428cc8);
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  /* margin: 1%;
+  padding: 2%; */
+  border: 2px #000000 solid;
+}
+.form-item {
+text-align: left;
+border: #428cc8 dotted;
+}
+button {
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer
+}
+label {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: left;
+  padding:  1rem;
+}
+
+input {
+  margin: 0.5rem;
+  padding:1rem;
+  border: none;
+  border-radius: 10px;
+  width:inherit
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}

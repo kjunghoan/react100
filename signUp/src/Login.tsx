@@ -16,30 +16,35 @@ export const Login: React.FC<LoginProps> = (props) => {
   }
 
   return (
-    <>
-      <h1>Login component</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          placeholder="name@email.com"
-          id="email"
-          name="email"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          placeholder="********"
-          id="password"
-          name="password"
-          onChange={(e) => setPassword(e.target.value)}
-          value={password}
-        />
+    <div className="form-container">
+      <form className="form" onSubmit={handleSubmit}>
+        <div className="form-item">
+          <label htmlFor="email">Email</label>
+          <br />
+          <input
+            type="email"
+            placeholder="name@email.com"
+            id="email"
+            name="email"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+        </div>
+        <div className="form-item">
+          <label htmlFor="password">Password</label>
+          <br />
+          <input
+            type="password"
+            placeholder="********"
+            id="password"
+            name="password"
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
+          />
+        </div>
         <button type="submit">Log In</button>
       </form>
-      <button onClick={() => props.setCurrentForm('register')}>Don't have an account? Register Here.</button>
-    </>
+      <button className="link-btn" onClick={() => props.setCurrentForm('register')}>Don't have an account? Register Here.</button>
+    </div>
   )
 }
