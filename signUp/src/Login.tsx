@@ -17,6 +17,7 @@ export const Login: React.FC<LoginProps> = (props) => {
 
   return (
     <div className="form-container">
+      <h2>Login</h2>
       <form className="form" onSubmit={handleSubmit}>
         <div className="form-item">
           <label htmlFor="email">Email</label>

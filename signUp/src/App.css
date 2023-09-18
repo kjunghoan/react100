@@ -6,19 +6,19 @@
   justify-content: center;
   text-align: center;
   color:white;
-  background-image: linear-gradient(79deg, #9057d2, #b25fe9 48%, #428cc8);
+  background-image: linear-gradient(79deg, #6a3aa291, #a17ef3b8 48%, #57bde9);
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  /* margin: 1%;
-  padding: 2%; */
-  border: 2px #000000 solid;
+  margin: 1%;
+  padding: 2%;
+  border: 1px #ffffff solid;
+  border-radius: 10px;
 }
 .form-item {
 text-align: left;
-border: #428cc8 dotted;
 }
 button {
   font-weight: bold;
@@ -40,7 +40,7 @@ input {
   padding:1rem;
   border: none;
   border-radius: 10px;
-  width:inherit
+  width:80%
 }
 
 .link-btn {
